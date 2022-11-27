@@ -3,6 +3,9 @@ from datetime import *
 import praw
 import time
 
+#bot developed by exekiey
+#https://github.com/exekiey
+
 reddit = praw.Reddit(
     client_id="HdfHFLcE_v6YXzbruC9I7w",
     client_secret="VQLz1akG2PY1w900ouA52yDl-0V_mw",
