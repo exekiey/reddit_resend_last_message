@@ -6,16 +6,19 @@ import time
 #bot developed by exekiey
 #https://github.com/exekiey
 
+your_name = ""
+your_password = ""
+
 reddit = praw.Reddit(
     client_id="HdfHFLcE_v6YXzbruC9I7w",
     client_secret="VQLz1akG2PY1w900ouA52yDl-0V_mw",
     user_agent="my user agent",
-    username = "Frosty_Possible7274",
-    password = "Alejandro123"
+    username = your_name,
+    password = your_password
 )
 
 
-reddit_authentication = RedditAuthentication.PasswordAuth(reddit_username="Your_Name", reddit_password="Your_Password",
+reddit_authentication = RedditAuthentication.PasswordAuth(reddit_username= your_name, reddit_password = your_password,
                                                           twofa=None)
 
 chat_bot = ChatBot(print_chat=True, store_session=True, log_websocket_frames=False, authentication= reddit_authentication)
