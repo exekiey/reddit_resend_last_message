@@ -12,7 +12,7 @@ reddit = praw.Reddit(
 )
 
 
-reddit_authentication = RedditAuthentication.PasswordAuth(reddit_username="Frosty_Possible7274", reddit_password="Alejandro123",
+reddit_authentication = RedditAuthentication.PasswordAuth(reddit_username="Your_Name", reddit_password="Your_Password",
                                                           twofa=None)
 
 chat_bot = ChatBot(print_chat=True, store_session=True, log_websocket_frames=False, authentication= reddit_authentication)
